@@ -61,9 +61,7 @@ def main():
     weekly_data = daily_data.resample("W-FRI").last()
     run_pipeline(weekly_data, label="weekly")
 
-    backtest_runner()
-
 
 if __name__ == "__main__":
-    # main()
+    main()
     backtest_runner(tolerance=0.05)
