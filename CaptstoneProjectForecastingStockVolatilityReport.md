@@ -1,8 +1,8 @@
 # Capstone Project Proposal: Risk Modelling and Volatility Clustering for Securities  
 ## A Review of Palantir Technologies Inc. (PLTR) Stock Volatility via the Yahoo Finance API
 
-- **Course**: Udacity; Data Science Nanodegree
-- **Author**: Niall MacKenzie
+**Course**: Udacity; Data Science Nanodegree
+**Author**: Niall MacKenzie
 
 ---
 
@@ -12,7 +12,11 @@ This project aimed to model and forecast the volatility of PLTR stock using hist
 ---
 
 ## Medium Article
-There is also a Medium.com Article associated with this repository (I wrote it before I realised I was to be more in-depth as like in here! - https://medium.com/@theniallmackenzie/forecasting-stock-volatility-a-glimpse-into-pltrs-future-with-machine-learning-be4f0e636e03 )
+There is also a Medium.com Article associated with this repository (I wrote it before I realised I was to be more in-depth as like in here!)
+
+You can [view it here!](https://medium.com/@theniallmackenzie/forecasting-stock-volatility-a-glimpse-into-pltrs-future-with-machine-learning-be4f0e636e03)
+
+---
 
 ## Problem Statement  
 The core question was: Can we effectively model and forecast the volatility of PLTR stock for the period 1 January 2021 to 21 March 2025 using machine learning techniques? Our objectives were to:  

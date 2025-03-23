@@ -4,6 +4,13 @@ Capstone Project with Udacity for Data Science Nanodegree. Reviewing stock volat
 ## GitHub Repo Link
 https://github.com/fmcgh/UdaDataScienceCaptstoneProject-StockVolatility
 
+
+## Medium Article Link
+You can [view it here!](https://medium.com/@theniallmackenzie/forecasting-stock-volatility-a-glimpse-into-pltrs-future-with-machine-learning-be4f0e636e03)
+
+## Project Report
+Please see the Project Report 'CaptstoneProjectForecastingStockVolatilityReport.pdf' in the root directory for this repository.
+
 ## Problem Statement
 
 Can we model and forecast volatility for a given stock or index?
