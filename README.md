@@ -24,7 +24,7 @@ While there is no evidence that it can predict the future, backtest outputs are 
 
 In my previous Udacity project, I attempted to see if we could predict whether a stock would be up or down. 
 
-(You can view the [previous project's Medium article here]<https://medium.com/@theniallmackenzie/how-i-predicted-the-stock-market-b6e2d96d461e> )
+(You can view the [previous project's Medium article here](https://medium.com/@theniallmackenzie/how-i-predicted-the-stock-market-b6e2d96d461e))
 
 Specifically, this used the 'stable' Vanguard Information Technology ETF (VGT) and comparatively volatile BitCoin (BTC).
 
