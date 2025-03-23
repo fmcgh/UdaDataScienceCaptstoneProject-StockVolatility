@@ -1,14 +1,13 @@
 import os
 import sys
-import pandas as pd
-
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import pandas as pd
 from data_pipeline import calculate_log_returns, load_data
 from model import calculate_var, fit_garch_model
 from settings import garch_order, var_confidence_levels
 
 
-def backtest_var(log_returns, var_df, tolerance=0.02):
+def backtest_var(log_returns, var_df, tolerance):
     """
     Backtests the Value at Risk (VaR) model.
 
@@ -43,25 +42,25 @@ def backtest_var(log_returns, var_df, tolerance=0.02):
     return pd.DataFrame(results).T
 
 
-def run_backtest(data, label="daily"):
+def run_backtest(data, tolerance, label="daily"):
     data = calculate_log_returns(data)
     model = fit_garch_model(data, garch_order)
     var_forecast = calculate_var(model, var_confidence_levels)
-    return backtest_var(data["log_returns"], var_forecast)
+    return backtest_var(data["log_returns"], var_forecast, tolerance)
 
 
-if __name__ == "__main__":
+def backtest_runner(tolerance=0.05):
     # Daily test
     print("Running daily backtest...")
     daily_data = load_data()
-    daily_results = run_backtest(daily_data, label="daily")
+    daily_results = run_backtest(daily_data, tolerance, label="daily")
     print("\nDaily VaR Backtest Results:")
     print(daily_results)
 
     # Weekly test
     print("\nRunning weekly backtest...")
     weekly_data = daily_data.resample("W-FRI").last()
-    weekly_results = run_backtest(weekly_data, label="weekly")
+    weekly_results = run_backtest(weekly_data, tolerance, label="weekly")
     print("\nWeekly VaR Backtest Results:")
     print(weekly_results)
 

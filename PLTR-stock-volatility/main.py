@@ -7,7 +7,7 @@ from data_pipeline import (
 from model import calculate_var, fit_garch_model
 from settings import garch_order, rolling_window
 from utils import plot_returns, plot_var, plot_volatility
-
+from tests.backtest import backtest_runner
 
 def run_pipeline(data, label):
     """
@@ -22,7 +22,7 @@ def run_pipeline(data, label):
 
     Input:
         data (DataFrame): Stock data.
-        label (str): Frequency label ('daily' or 'weekly').
+        label (str): Frequency label 'daily'/'weekly'
 
     Output:
         None. Prints model summary and saves plots/data.
@@ -47,6 +47,7 @@ def main():
       1. Load raw daily stock data.
       2. Run the daily pipeline.
       3. Resample data to weekly and run the weekly pipeline.
+      4. Run the backtest to confirm accuracy
 
     Input:
         None
@@ -60,6 +61,9 @@ def main():
     weekly_data = daily_data.resample("W-FRI").last()
     run_pipeline(weekly_data, label="weekly")
 
+    backtest_runner()
+
 
 if __name__ == "__main__":
-    main()
+    # main()
+    backtest_runner(tolerance=0.05)
