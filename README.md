@@ -181,17 +181,14 @@ The project generates several visual outputs, saved in the Outputs/ folder:
 While further validation for the model outputs can be performed, for the moment, this backtest outputs referenced above give enough security in the models performance for this project, per: 
 
   **Backtest Results:**  
-  
+
 - **Daily Model:**
 
   - *VaR 95%:* Observed exceedance rate of ~3.5% vs. expected 5% (PASS).  
 
   - *VaR 99%:* Observed exceedance rate of ~1.14% vs. expected 1% (PASS).
 
-- **Weekly Model:**  
-  Daily data is resampled to weekly frequency. The GARCH model on weekly data produces a flatter volatility forecast due to data smoothing from fewer observations.  
-
-  **Backtest Results:**  
+- **Weekly Model:**   
 
   - *VaR 95%:* Observed exceedance rate of ~5% (PASS).  
 
