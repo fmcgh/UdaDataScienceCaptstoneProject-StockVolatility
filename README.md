@@ -181,6 +181,8 @@ The project generates several visual outputs, saved in the Outputs/ folder:
 While further validation for the model outputs can be performed, for the moment, this backtest outputs referenced above give enough security in the models performance for this project, per: 
 
   **Backtest Results:**  
+  
+- **Daily Model:**
 
   - *VaR 95%:* Observed exceedance rate of ~3.5% vs. expected 5% (PASS).  
 
