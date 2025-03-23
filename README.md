@@ -8,7 +8,7 @@ https://github.com/fmcgh/UdaDataScienceCaptstoneProject-StockVolatility
 
 Can we model and forecast volatility for a given stock or index?
 
-**Use case:**
+### Use case:
 
 In application, this may be used to interpet securities data to predict whether the is impending volatility in the stock.
 
@@ -20,7 +20,7 @@ Importantly, this project is entirely academic and simply a view to the power of
 
 While there is no evidence that it can predict the future, backtest outputs are included below to verify its historical accuracy with existing, real world data. 
 
-**Further Context; an extension of prior academic research**
+### Further Context; an extension of prior academic research
 
 In my previous Udacity project, I attempted to see if we could predict whether a stock would be up or down. 
 
@@ -36,7 +36,7 @@ While the functionality was proved, the accuracy was poor, I had the incling tha
 
 In furtherance of this prior project, I am now seeking to better interpret and map volatility estimates for stocks.
 
-**And so:**
+### And so:
 
 This program seeks to predict volatiltiy ahead of time, daily and weekly for Palantir Technologies Inc. (PLTR). 
 
